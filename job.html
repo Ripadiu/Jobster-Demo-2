@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobster</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind an daisy UI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+
+    <script src="https://kit.fontawesome.com/7ff9b0e562.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="poppins-font">
+
+    <!-- header -->
+
+    <header class="lg:ml-20 ml-4 lg:mr-20 mr-4">
+
+        <!-- nav section -->
+
+        <div class="navbar bg-[#7EA7D4] bg-opacity-90 mt-5">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] flex justify-center items-center p-5 shadow bg-base-100 rounded-box w-64 text-lg font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="job.html">Job Info</a></li>
+                        <li><a href="">Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assats/Logo.JPG" class="h-10" alt="">
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg font-bold">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="job.html">Job Info</a></li>
+                    <li><a href="">Education</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <a href="login.html" class="btn font-bold bg-red-500 hover:bg-green-500 text-white">Log in</a>
+            </div>
+        </div>
+
+        <!-- hero section -->
+
+        <div class="hero lg:h-96 h-80 lg:mt-2 mt-4" style="background-image: url(assats/cover.jpg);">
+            <div class="hero-overlay bg-opacity-70"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 lg:text-5xl text-3xl font-bold">Hello there</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <!-- <div class="join">
+                        <div>
+                            <div>
+                                <input class="input input-bordered join-item" placeholder="Search" />
+                            </div>
+                        </div>
+                        <select class="select select-bordered join-item">
+                            <option disabled selected>Filter</option>
+                            <option>Sci-fi</option>
+                            <option>Drama</option>
+                            <option>Action</option>
+                        </select>
+                        <div class="indicator">
+                            <button class="btn join-item">Search</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <section class="about mt-20 py-16 bg-[#EADFF0] lg:ml-20 ml-4 lg:mr-20 mr-4 rounded-xl">
+
+            <div>
+                <h2 class="text-center lg:text-5xl text-3xl font-extrabold">
+                    Choose Your Field
+                </h2>
+                <p class="mt-5 text-center px-5 lg:px-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita? Lorem ipsum dolor sit
+                    amet
+                    consectetur <br> adipisicing elit. Provident, in!
+                </p>
+            </div>
+
+            <!-- team card -->
+
+
+
+            <div class="lg:ml-48 ml-5 lg:mr-48 mr-5 mt-20">
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-2 -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-3 -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-4  -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-5 -->
+                
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- div-6 -->
+
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-16 gap-10 mb-10">
+                    <!-- card-1 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="card lg:w-1/2 w-72 bg-slate-200 shadow-xl">
+                        
+                        <div class="card-body items-start text-start">
+                            <h2 class="card-title text-2xl">Company NAme</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Apply</button>
+                            <div class="card-actions gap-5">
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="" class="text-[#a256c8] hover:text-red-800"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+
+        <!-- footer section -->
+
+        <footer
+            class=" pl-30 pr-30 pt-10 pb-10 lg:pl-36 footer bg-[#001529] text-base-content lg:flex lg:justify-between mt-10">
+            <aside class="w-full">
+                <h2 class="lg:text-3xl text-xl text-center w-full lg:text-left text-[#FFF] font-extrabold">
+                    Get In Touch
+                </h2>
+                <p class=" p-4 text-center w-full lg:text-left text-[#ffffff99] font-medium text-base mt-4">
+                    To connect with us, you can follow our facebook page, subscribe our youtube channel, follow us in
+                    insta
+                    and twitter.
+                    also ypu can share your experience in our email section.
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-6">
+                    <i class="fa-regular fa-envelope text-[#FF4240]"></i>
+                    ashikpullock99@gmail.com
+                </p>
+                <p class=" text-center w-full lg:text-left font-medium text-[#FFF] mt-3">
+                    <i class="fa-solid fa-phone text-[#FF4240]"></i>
+                    (+88) 01624-334044
+                </p>
+            </aside>
+            <div
+                class="w-full flex justify-evenly lg:justify-between  items-center md:justify-between flex-row xl:justify-between 2xl:justify-between">
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-7">Company</header>
+                    <a class="link link-hover font-medium text-[#ffffff99]">About us</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Leadership</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Careers</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">News & Article</a>
+                    <a class="link link-hover font-medium text-[#ffffff99]">Legal Notice</a>
+                </nav>
+                <nav class=" flex flex-col justify-between items-center">
+                    <header class=" text-[#FFF] font-bold text-xl mb-8">Support</header>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1 ">Help Center</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">FAQ</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Ticket Support</a>
+                    <a class="link link-hover font-medium text-[#ffffff99] mb-1">Contact Us</a>
+                </nav>
+            </div>
+            <nav class="w-full">
+                <header class=" text-center w-full    text-[#FFF] lg:text-center font-bold text-xl mb-7">Services
+                </header>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Academy</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Group
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Private
+                    Lesson</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    kids</a>
+                <a class="link link-hover font-medium text-[#ffffff99] text-center lg:text-center w-full">Hockeys for
+                    Adult</a>
+            </nav>
+        </footer>
+
+    </footer>
+
+
+    <!-- js file -->
+
+    <!-- <script src="tailwind.config.js"></script> -->
+</body>
+
+</html>
