@@ -1,3 +1,6 @@
+
+
+
 // function takeData() {
 //     // first name
 //     const takeFirstName = document.getElementById('first-name');
@@ -79,6 +82,3 @@ function getInputValueId(inputFieldId) {
     const inputValue = inputField.value;
     return inputValue;
 }
-
-
-

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +31,7 @@
 
 </head>
 
-<body class="poppins-font">
+<body class="poppins-font bg-gradient-to-t from-[#3D52A1] to-[#EFE9F3]">
 
     <!-- header -->
 
@@ -37,7 +39,7 @@
 
         <!-- nav section -->
 
-        <div class="navbar bg-[#7EA7D4] bg-opacity-90 mt-5">
+        <div class="navbar  bg-opacity-90 pt-3">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -52,7 +54,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="job.html">Job Info</a></li>
-                        <li><a href="">Education</a></li>
+                        <li><a href="education.html">Education</a></li>
                     </ul>
                 </div>
                 <div>
@@ -60,15 +62,15 @@
                 </div>
             </div>
             <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-lg font-bold">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="job.html">Job Info</a></li>
-                    <li><a href="">Education</a></li>
+                <ul class="menu text-black menu-horizontal px-1 text-lg font-bold">
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a href="index.html">Home</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a href="about.html">About</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a href="job.html">Job Info</a></li>
+                    <li class="hover:bg-gradient-to-l from-[#202853] to-[#bf7dea] hover:text-white rounded-xl"><a href="education.html">Education</a></li>
                 </ul>
             </div>
             <div class="navbar-end gap-4">
-                <a href="login.html" class="btn font-bold bg-red-500 hover:bg-green-500 text-white">Log in</a>
+                <a href="login.html" class="btn font-bold bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white">Log in</a>
             </div>
         </div>
 
@@ -94,13 +96,13 @@
             <div class="flex justify-center items-center mt-10">
 
                 <div
-                    class=" flex flex-col gap-5 items-center justify-center bg-gray-100 lg:w-1/2 w-full rounded-xl py-10">
+                    class=" flex flex-col gap-5 items-center justify-center  lg:w-1/2 w-full rounded-xl py-10">
                     <form onsubmit="takeData(event)" action="#non" method="post"
-                        class="w-full max-w-md bg-white rounded-lg shadow-md p-8">
+                        class="w-full max-w-md bg-[#ADBADA] rounded-lg shadow-md p-8">
                         <p class="text-gray-700 mb-4">Note: All fields are required.</p>
                         <div class="grid grid-cols-2 gap-4 mb-4">
                             <input id="first-name" type="text" placeholder="First Name" required
-                                class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                                class="border border-gray-300  rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
                             <input id="last-name" type="text" placeholder="Last Name" required
                                 class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
                         </div>
@@ -110,38 +112,12 @@
                             class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
                         <input id="verify-password" type="password" placeholder="Verify Password" required
                             class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
-                        <!-- <div class="grid grid-cols-3 gap-4 mb-4">
-                            <input id="date" type="text" placeholder="Date (dd)" required
-                                class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
-                            <input id="month" type="text" placeholder="Month (mm)" required
-                                class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
-                            <input id="year" type="text" placeholder="Year (yyyy)" required
-                                class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
-
-                             <div class="mb-5">
-                                <label for="date" class="block font-medium text-gray-700">Date of Birth:</label>
-                                <input itemid="date-of-birth" type="date" name="date" id="date" class="formbold-form-input" />
-                            </div>
-                        </div> -->
-                        <!-- <div class="grid grid-cols-2 gap-4 mb-4">
-                            <select
-                                class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
-                                <option value="0" selected disabled><span id="city"> City</span></option>
-                                <option value="1"> <span id="city">Dhaka</span></option>
-                            </select>
-                            <select
-                                class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
-                                <option value="0" selected disabled>Country</option>
-                                <option value="1">Bangladesh</option>
-                                <option value="2">Outside Bangladesh</option>
-                            </select>
-                        </div> -->
 
                         <div class="flex items-center mb-4">
                             <input type="checkbox" id="register-agree"
                                 class="rounded border-gray-300 focus:ring focus:border-blue-300 required:">
                             <label for="register-agree" class="ml-2 block text-sm text-gray-900">
-                                Do you agree to the <a href="#" class="text-red-500">terms and conditions?</a>
+                                Do you agree to the <a href="#" class="text-[#a84ae6]">terms and conditions?</a>
                             </label>
                         </div>
                         <!-- <input type="submit" value="Register Now"
@@ -150,11 +126,11 @@
 
                         <div class="flex justify-center items-center">
                             <button type="submit"
-                            class=" bg-red-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-green-500 transition duration-300">
+                                class="bg-gradient-to-l from-[#202853] to-[#bf7dea] text-white font-semibold px-4 py-2 rounded-md transition duration-300">
 
-                            Register Now
+                                Register Now
 
-                        </button>
+                            </button>
                         </div>
 
                     </form>
@@ -170,7 +146,7 @@
         <section id="user-info" class="user profile hidden">
             <section class="user flex justify-center items-center mt-10 ml-4 mr-4 lg:ml-0 lg:mr-0">
 
-                <div class="lg:w-1/2 w-full  h-1/2 border-4 rounded-xl">
+                <div class="lg:w-1/2 w-full bg-white  h-1/2 border-4 rounded-xl">
 
                     <h2 class="flex justify-center items-center text-2xl font-extrabold mt-10">
                         My profile Information
